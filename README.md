@@ -7,7 +7,7 @@ Displays scheduled departure times of given HSL stop with minute countdowns.
 - Generate display from any HSL stop using the stop number (e.g. V1777, H0107).
 - Set certain vehicle numbers as secondary (make them smaller, different colour, whatevs).
 - Exclude certain vehicle numbers altogether.
-- Include walk time in minute countdowns (count to "get your ass moving" instead of vehicle arrival time).
+- Include walk time in minute countdowns (count to "get your ass moving" instead of "vehicle at stop" time).
 - Any delays are automatically counted in the minute countdowns. You may still display an additional message in such occurrances.
 
 ### Relevant settings
