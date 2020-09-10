@@ -8,7 +8,7 @@ Displays scheduled arrival times of given HSL stop with minute countdowns.
 - Set certain vehicle numbers as secondary (make them smaller, different colour, whatevs).
 - Exclude certain vehicle numbers altogether.
 - Include walk time in minute countdowns (count to "get your ass moving" instead of vehicle arrival time).
-- Display in advance if vehicle is running late.
+- Any delays are automatically counted in the minute countdowns. You may still separately display in advance if vehicle is running late from schedule.
 
 ### Relevant settings
 ```
