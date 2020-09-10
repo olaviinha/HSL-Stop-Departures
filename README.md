@@ -28,7 +28,7 @@ var getReady = 10;                          // Add .ready-set class when "get yo
 
 ### Notes
 
-While PHP is not required for the script to run, there is one PHP file in this repository. This is just an image file that will output a different SVG image depending on URL parameters. You can replace it with any normal image files in the HTML and JS or remove the animated icons altogether.
+While PHP is not required for the script to run, there is one PHP file in this repository. This is just an image file that will output a different SVG image depending on URL parameters. You can replace it with any normal image files in the HTML and JS or remove the animated icons altogether. This script is old and I'm too lazy to properly review and refactor it.
 
 ## Demo
 
