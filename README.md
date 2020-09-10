@@ -5,7 +5,7 @@ Displays scheduled arrival times of given HSL stop with minute countdowns.
 ## Features
 - Retrieves data in real-time from HSL's Routing API.
 - Generate display from any HSL stop using the stop number (e.g. V1777, H0107).
-- Set certain vehicle numbers as secondary.
+- Set certain vehicle numbers as secondary (make them smaller, different colour, whatevs).
 - Exclude certain vehicle numbers altogether.
 - Include walk time to minute countdowns (count to "get your ass moving" instead of vehicle arrival time).
 - Display in advance if vehicle is running late.
