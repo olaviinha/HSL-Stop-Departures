@@ -1,6 +1,6 @@
-# HSL Stop Arrivals
+# HSL Stop Departures
 
-Displays scheduled arrival times of given HSL stop with minute countdowns.
+Displays scheduled departure times of given HSL stop with minute countdowns.
 
 ## Features
 - Retrieves data in real-time from HSL [Routing API](https://digitransit.fi/en/developers/apis/1-routing-api/).
@@ -12,12 +12,12 @@ Displays scheduled arrival times of given HSL stop with minute countdowns.
 
 ### Relevant settings
 ```
-var stopId = 'H2061';                       // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119). How to find your stop number or id: https://github.com/olaviinha/HSL-StopArrivals
+var stopId = 'H2061';                       // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119). How to find your stop number or id: https://github.com/olaviinha/HSL-StopDepartures
 var secondaryLines = ['75', '77'];          // Optional: lines that are less relevant but you still want to include them in the list. You can style them grayer, smaller or whatevs.
 var excludeLines = ['65'];                  // Optional: lines that are not displayed in the list at all.
 var listContainer = '.coming';              // Element in which the arrival list is placed.
 
-var walkTime = 3;                           // Remove this many minutes from the scheduled arrival time, i.e. countdown to "get your ass moving" time instead of scheduled vehicle arrival time.
+var walkTime = 3;                           // Remove this many minutes from the scheduled departure time, i.e. countdown to "get your ass moving" time instead of scheduled vehicle departure time.
 var getReady = 10;                          // Add .ready-set class when "get your ass moving" time in less than N minutes.
 ```
 
@@ -34,4 +34,4 @@ While PHP is not required for the script to run, there is one PHP file in this r
 
 ## Demo
 
-https://joku.asia/esim/hsl-stop-arrivals
+https://joku.asia/esim/hsl-stop-departures
