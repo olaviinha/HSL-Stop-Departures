@@ -7,7 +7,7 @@ var walkTime = 3;                           // Remove this many minutes from the
 var getReady = 10;                          // Add .ready-set class when "get your ass moving" time in less than N minutes.
 var prettyNow = 'Nyt';                      // Pretty way of saying "0 minutes", e.g. "Now".
 
-var displayDelay = false;                   // Display message if displayed arrival time differs from scheduled arrival time (bus is late).
+var displayDelay = true;                    // Display message if displayed arrival time differs from scheduled arrival time (bus is late).
 var lateFromSchedule = 'min myöhässä aikataulusta.' // Message to display if above is true: "N minutes late from schedule."
 
 var checkNextMinutes = 30;                  // Display everything that arrives to the stop in the next N minutes.
@@ -188,7 +188,7 @@ function initIcons() {
 
 function initDemoBox() {
     $('#stopname').html('// '+name);
-    $('#stopCode').change(function(){
+    $('#stopCode').keyup(function(){
         var val = $(this).val();
         console.log(val.length, val);
         if(val.length <= 5){
