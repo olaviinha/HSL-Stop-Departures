@@ -24,9 +24,9 @@ var getReady = 10;                          // Add .ready-set class when "get yo
 ### How to find your stop number
 
 Stop numbers look something like this: H0107, V1777, E2122, etc.
-- HSL App's routes section. Tap on the stop to see its stop number.
-- [Reittiopas](https://reittiopas.hsl.fi). Click on the stop to see its stop number.
-- Stop number is always written somewhere at the stop, so check the stop physically.
+- HSL App's routes section. Tap on the stop in the map to see its stop number.
+- [Reittiopas](https://reittiopas.hsl.fi). Click on the stop in the map to see its stop number.
+- Check the stop physically. Stop number is always written somewhere at the stop.
 
 ### Notes
 
