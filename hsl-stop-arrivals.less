@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Signika+Negative:300,400,700');
+@font-face {
+    font-family: 'HSL Pikto';
+    src: url(hsl-pikto.woff);
+    font-weight:400;
+}
+
+@screen-xs:          480px;
+@screen-sm:          768px;
+@screen-md:          992px;
+@screen-lg:         1400px;
+
+@screen-xs-max:     (@screen-sm-min - 1);
+@screen-sm-min:     @screen-sm;
+@screen-sm-max:     (@screen-md - 1);
+@screen-md-min:     @screen-md;
+@screen-md-max:     (@screen-lg - 1);
+@screen-lg-min:     @screen-lg;
+
+@text:                  #fff;
+@text-dark:             #fff;
+@green:                 #060;
+@warn:                  #600;
+
+@gutter:                20px;
+@base-size:             20px;
+@base-size-xs:          12px;
+@xxxlarge:              30rem;
+@xlarge:                5rem;
+@semilarge:             3rem;
+@large:                 2rem;
+@decent:                1.5rem;
+@medium:                1rem;
+@small:                 .5rem;
+@tiny:                  .25rem;
+
+@light:                 100;
+@normal:                300;
+@heavy:                 600;
+
+@keyframes fade {
+    0% {   opacity: 0; }
+    100% { opacity: 1; }
+}
+
+span[class^='hsl-'], div[class^='hsl-'] {
+    font-family: 'HSL Pikto';
+    font-weight: 600;
+    &:after {
+        font-size: 1.8rem;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.hsl-bus:after {  content: '2'; }
+.hsl-warn:after { content: 'S'; top: 5px !important; }
+
+html {
+    font-size: @base-size;
+    @media(max-width: @screen-md-max){
+        font-size: @base-size-xs;
+    }
+}
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    color: @text-dark;
+    background: url('https://www.telia.fi/dam/jcr:73aa88c9-2a87-4187-b13b-45d9644905b3/1600x1067_Helsinki.jpg') no-repeat fixed;
+    // background-size: cover;
+    // overflow: hidden;
+}
+
+.info {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #000;
+    padding: 20px;
+    color: #999;
+    font-size: 14px;
+    width: 400px;
+    var {
+        color: #66d;
+    }
+    .val {
+        color: #dd6;
+    }
+    .comment {
+        color:#666;
+    }
+    input {
+        background: #000;
+        color: #fff;
+        max-width: 40px;
+        border: 0;
+        outline: 0;
+
+    }
+}
+
+.container-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.coming {
+    padding: @gutter*2 0 0 @gutter*2;
+    white-space: nowrap;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+    .bus {
+        padding: @gutter/2 0 @gutter/2 0;
+        &.next {
+            
+        }
+        &.secondary {
+            zoom: .75;
+            opacity: .75;
+            padding: @gutter/4 0 @gutter/4 0;
+        }
+        .line {
+            font-size: 5.7rem;
+            text-align: center;
+            top: -1rem;
+            .night {
+                font-size: @large;
+            }
+        }
+        .until {
+            padding-right: 0;
+            .icon {
+                float: left;
+                position: relative;
+                left: 7px;
+                top: -2px;
+                visibility: hidden;
+                &.ready-set {
+                    visibility: visible;
+                }
+                &.go {
+                    visibility: visible;
+                    animation: fade .5s alternate infinite;
+                }
+                img.waiting {
+                    width: @base-size;
+                }
+            }
+            .mins {
+                float: left;
+                font-size: @semilarge;
+                .unit {
+                    font-size: @large;
+                }
+                .too-late & {
+                    font-size: @large;
+                }
+            }
+        }
+        .at-stop {
+            zoom: 1;
+            text-shadow: 0 0 5px #000;
+            padding-left: 1.5rem;
+            @media(max-width: @screen-md-max){
+                padding-left: 2.8rem;
+            }
+            clear: both;
+            font-size: @decent;
+            font-weight: @normal;
+            opacity: .8;
+            display: block;
+            line-height: 1.5rem;
+            position: relative;
+            top: -.7rem;
+            .hsl-bus {
+                position: relative;
+                top: 1px;
+            }
+            .late {
+                opacity: .9;
+                display: block;
+            }
+            .scheduled {
+                display: none;
+            }
+        }
+    }
+}
