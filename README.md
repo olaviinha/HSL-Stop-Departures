@@ -4,6 +4,7 @@ Displays scheduled arrival times of given HSL stop with minute countdowns.
 
 ## Features
 - Retrieves data in real-time from HSL's Routing API.
+- Generate display from any HSL stop using the stop number (e.g. V1777, H0107).
 - Set certain vehicle numbers as secondary.
 - Exclude certain vehicle numbers altogether.
 - Include walk time to minute countdowns (count to "get your ass moving" instead of vehicle arrival time).
@@ -22,6 +23,7 @@ var getReady = 10;                          // Add .ready-set class when "get yo
 
 ### How to find your stop number
 
+- Stop numbers look something like this: H0107
 - HSL App's routes section. Tap on the stop to see its stop number.
 - Reittiopas. Click on the stop to see its stop number.
 - Stop number is always written somewhere at the stop, so check the stop physically.
