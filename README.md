@@ -1,6 +1,6 @@
 # HSL Stop Departures
 
-Displays scheduled departure times of – and minute countdowns to – given public transportation stop operated by Helsinki Region Transport (HSL).
+Displays minute countdowns and scheduled departure times of any given public transportation stop operated by Helsinki Region Transport (HSL).
 
 ## Features
 - Retrieves data in real-time from HSL [Routing API](https://digitransit.fi/en/developers/apis/1-routing-api/).
