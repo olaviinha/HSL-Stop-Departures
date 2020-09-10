@@ -1,4 +1,4 @@
-var stopId = 'H2061';                       // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119). How to find your stop number or id: https://github.com/olaviinha/HSL-Stop-Arrivals
+var stopId = 'H2061';                       // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119). How to find your stop number or id: https://github.com/olaviinha/HSL-StopArrivals
 var secondaryLines = ['75', '77'];          // Optional: lines that are less relevant but you still want to include them in the list. You can style them grayer, smaller or whatevs.
 var excludeLines = ['65'];                  // Optional: lines that are not displayed in the list at all.
 var listContainer = '.coming';              // Element in which the arrival list is placed.
