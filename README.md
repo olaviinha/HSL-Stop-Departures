@@ -10,7 +10,7 @@ Displays scheduled departure times of given HSL stop with minute countdowns.
 - Include walk time in minute countdowns (count to "get your ass moving" instead of "vehicle at stop" time).
 - Any delays are automatically counted in the minute countdowns. You may still display an additional message in such occurrances.
 
-### Relevant settings
+### Relevant settings in hsl-stop-departures.js
 ```
 var stopId = 'H2061';                       // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119). 
 var secondaryLines = ['75', '77'];          // Optional: lines that are less relevant but you still want to include them in the list. You can style them grayer, smaller or whatevs.
