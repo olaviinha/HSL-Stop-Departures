@@ -30,7 +30,7 @@ Stop numbers look something like this: H0107, V1777, E2122, etc.
 
 ### Notes
 
-While PHP is not required for the script to run, there is one PHP file in this repository. This is just an image file that will output a different SVG image depending on URL parameters. You can replace it with any normal image files in the HTML and JS or remove the animated icons altogether. Wrote this script for personal use years ago and I'm too lazy to properly review and refactor it.
+While PHP is not required for the script to run, there is one PHP file in this repository. This is just an image file that will output a different SVG image depending on URL parameters. This is used as an animated icon for the next departures. You can replace it with any icons of your choosing in the HTML and JS (`animateIcons()`) or remove the animated icons altogether. Wrote this script for personal use years ago and I'm too lazy to properly review and refactor it.
 
 ## Demo
 
