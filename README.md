@@ -17,6 +17,8 @@ Displays minute countdowns and scheduled departure times of any given public tra
 - Less (demo only)
 - Bootstrap (demo only)
 
+All dependencies are linked included from CDNs in the demo.
+
 ### Relevant settings in hsl-stop-departures.js
 ```
 // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119).
