@@ -17,7 +17,6 @@ var updateInterval = {'mins': 5000, 'list': checkEvery*1000, 'icons':  500};
 
 var listInitialized = false;
 var stop, name;
-var rnd = Math.floor((Math.random() * 1000000) + 1);
 
 moment.updateLocale('en', {
     relativeTime : {
