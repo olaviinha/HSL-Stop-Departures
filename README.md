@@ -10,6 +10,12 @@ Displays minute countdowns and scheduled departure times of any given public tra
 - Include walk time in minute countdowns (count to "get your ass moving" instead of "vehicle at stop" time).
 - Any delays are automatically counted in the minute countdowns. You may still display an additional message in such occurrances.
 
+## Dependencies
+
+- jQuery
+- Moment
+- Less
+
 ### Relevant settings in hsl-stop-departures.js
 ```
 // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119).
