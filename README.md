@@ -14,7 +14,8 @@ Displays minute countdowns and scheduled departure times of any given public tra
 
 - jQuery
 - Moment
-- Less
+- Less (demo only)
+- Bootstrap (demo only)
 
 ### Relevant settings in hsl-stop-departures.js
 ```
