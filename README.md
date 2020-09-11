@@ -12,13 +12,35 @@ Displays minute countdowns and scheduled departure times of any given public tra
 
 ### Relevant settings in hsl-stop-departures.js
 ```
-var stopId = 'H2061';                       // HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119). 
-var secondaryLines = ['75', '77'];          // Optional: lines that are less relevant but you still want to include them in the list. You can style them grayer, smaller or whatevs.
-var excludeLines = ['65'];                  // Optional: lines that are not displayed in the list at all.
-var listContainer = '.coming';              // Element in which the arrival list is placed.
+// HSL stop number (e.g. H1197) or stop id (e.g. HSL:1030119).
+var stopId = 'H2061';
 
-var walkTime = 3;                           // Remove this many minutes from the scheduled departure time, i.e. countdown to "get your ass moving" time instead of scheduled vehicle departure time.
-var getReady = 10;                          // Add .ready-set class when "get your ass moving" time in less than N minutes.
+// Optional: lines that are less relevant but you still want to include them in the list. You can style them grayer, smaller or whatevs.
+var secondaryLines = ['75', '77'];          
+
+// Optional: lines that are not displayed in the list at all.
+var excludeLines = ['65'];                  
+
+// Element in which the departure list is placed.
+var listContainer = '.coming';              
+
+// Remove this many minutes from the scheduled departure time, i.e. countdown to "get your ass moving" time instead of scheduled vehicle departure time.
+var walkTime = 3;                    
+
+// Add .ready-set class when "get your ass moving" time in less than N minutes.
+var getReady = 10;                          
+
+// Pretty way of saying "0 minutes", e.g. "Now".
+var prettyNow = 'Nyt';                      
+
+// Display message if displayed departure time differs from scheduled departure time (bus is late).
+var displayDelay = true;                    
+
+// Message to display if above is true: "N minutes late from schedule."
+var lateFromSchedule = 'min myöhässä aikataulusta.' 
+
+// Update list every N seconds.
+var checkEvery = 10;                        
 ```
 
 ### How to find your stop number
