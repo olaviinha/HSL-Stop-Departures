@@ -6,7 +6,7 @@ Displays minute countdowns and scheduled departure times of any given public tra
 - Retrieves data in real-time from HSL [Routing API](https://digitransit.fi/en/developers/apis/1-routing-api/).
 - Generate display from any HSL stop using the stop number (e.g. V1777, H0107).
 - Set certain vehicle numbers as secondary (make them smaller, different colour, whatevs).
-- Exclude certain vehicle numbers altogether.
+- Hide certain vehicle numbers from the departure list altogether.
 - Include walk time in minute countdowns (count to "get your ass moving" instead of "vehicle at stop" time).
 - Any delays are automatically counted in the minute countdowns. You may still display an additional message in such occurrances.
 
