@@ -60,7 +60,7 @@ var checkEvery = 10;
 Stop numbers look something like this: H0107, V1777, E2122, etc.
 - HSL App's routes section. Tap on the stop in the map to see its stop number.
 - [Reittiopas](https://reittiopas.hsl.fi). Click on the stop in the map to see its stop number.
-- Check the stop physically (or _[semiphysically](https://www.google.com/maps/@60.1879716,24.9633115,3a,15y,243.9h,90.45t/data=!3m6!1e1!3m4!1sA_yyz1YsMbycBB6izp6JEA!2e0!7i13312!8i6656))_. Stop number is always written somewhere at the stop. Just add a letter in front: H for Helsinki, E for Espoo, V for Vantaa, etc.
+- Check the stop physically (or _[semiphysically](https://www.google.com/maps/@60.1879716,24.9633115,3a,15y,243.9h,90.45t/data=!3m6!1e1!3m4!1sA_yyz1YsMbycBB6izp6JEA!2e0!7i13312!8i6656))_. Stop number is always written somewhere at the stop. Just add a letter in front according to which city the stop is located in: H for Helsinki, E for Espoo, V for Vantaa, etc.
 
 ### Notes
 
