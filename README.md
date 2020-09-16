@@ -20,7 +20,7 @@ https://joku.asia/esim/hsl-stop-departures
 - Less (demo only)
 - Bootstrap (demo only)
 
-All dependencies are included (linked from CDNs) in the demo.
+All dependencies are linked from CDNs in the demo.
 
 ### Relevant settings in hsl-stop-departures.js
 ```
