@@ -11,7 +11,7 @@ https://joku.asia/esim/hsl-stop-departures
 - Set certain vehicle numbers as secondary (make them smaller, different colour, whatevs).
 - Hide certain vehicle numbers from the departure list altogether.
 - Include walk time in minute countdowns (count to "get your ass moving" instead of "vehicle at stop" time).
-- Any delays are automatically counted in the minute countdowns. You may still display an additional message in such occurrances.
+- Any delays are automatically counted in the minute countdowns. You may still display an additional message in such occurrences.
 
 ## Dependencies
 
