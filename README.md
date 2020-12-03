@@ -2,6 +2,8 @@
 
 Displays minute countdowns and scheduled departure times of any given public transportation stop operated by Helsinki Region Transport (HSL).
 
+![HSL Stop departures](https://storage.googleapis.com/olaviinha/github/hsl-stop-departs.jpg)
+
 ## Demo
 https://joku.asia/esim/hsl-stop-departures
 
