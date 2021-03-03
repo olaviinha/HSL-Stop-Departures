@@ -1,12 +1,20 @@
 <?php
   header('Content-type: image/svg+xml');
-  $s = $_GET['s'];
-  $c = $_GET['c'];
-  $p = $_GET['p'];
+  $s = 10;
+  $c = 'fff';
+  $p = '';
 
-  if(!isset($s) || $s == ''){ $s = 10; }
-  if(!isset($c) || $c == ''){ $c = 'fff'; }
-  if(!isset($p) || $p == ''){ $p = ''; }
+  if(isset($_GET['s'])){
+    $s = $_GET['s'];
+  }
+
+  if(isset($_GET['c'])){
+    $c = $_GET['c'];
+  }
+
+  if(isset($_GET['p'])){
+    $p = $_GET['p'];
+  }
   
 ?>
 <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
