@@ -14,6 +14,7 @@ Displays minute countdowns and scheduled departure times of any given public tra
 
 ## Dependencies
 
+- As of April 2023, [API key is required](https://digitransit.fi/en/developers/api-registration/).
 - jQuery
 - Moment
 - Less (demo only)
