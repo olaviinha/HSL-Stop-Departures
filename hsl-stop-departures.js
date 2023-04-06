@@ -11,6 +11,7 @@ var displayDelay = true;                    // Display message if displayed depa
 var lateFromSchedule = 'min myöhässä aikataulusta.' // Message to display if above is true: "N minutes late from schedule."
 var checkEvery = 10;                        // Update list every N seconds.
 
+var digitransit_api_key = '';               // As of April 2023, Digitransit API key is required. Get it from https://digitransit.fi
 var timeFormat = 'HH:mm:ss';
 var queryUrl = 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql';
 var updateInterval = {'mins': 5000, 'list': checkEvery*1000, 'icons':  500};
@@ -33,6 +34,9 @@ moment.updateLocale('en', {
 function getStopId(stopNumber){
     var sId;
     $.ajax(queryUrl, {
+        headers: {
+            'digitransit-subscription-key': digitransit_api_key
+        },
         data: `{
             stops(name: "`+stopNumber+`") {
               gtfsId
@@ -93,6 +97,9 @@ function updateMins() {
 
 function updateList(stop, el){
     $.ajax(queryUrl, {
+        headers: {
+            'digitransit-subscription-key': digitransit_api_key
+        },
         data: `{
             stop(id: "`+stopId+`") {
               name
