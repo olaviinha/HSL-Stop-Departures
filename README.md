@@ -4,9 +4,6 @@ Displays minute countdowns and scheduled departure times of any given public tra
 
 ![HSL Stop departures](https://storage.googleapis.com/olaviinha/github/hsl-stop-departs.jpg)
 
-## Demo
-https://joku.asia/esim/hsl-stop-departures
-
 ## Features
 - Retrieves data in real-time from HSL [Routing API](https://digitransit.fi/en/developers/apis/1-routing-api/).
 - Generate display from any HSL stop using the stop number (e.g. V1777, H0107).
